@@ -11,12 +11,9 @@
   "scripts": {
     "dev": "concurrently -k \"npm:dev --workspace server\" \"npm:dev --workspace frontend\"",
     "build": "npm run build --workspace server && npm run build --workspace frontend",
-    "start": "npm run start --workspace server",
-    "deploy": "npm run build && wrangler deploy",
-    "dev:cf": "npm run build && wrangler dev"
+    "start": "npm run start --workspace server"
   },
   "devDependencies": {
-    "concurrently": "^9.0.0",
-    "wrangler": "^4.68.1"
+    "concurrently": "^9.0.0"
   }
 }
