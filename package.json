@@ -1,6 +1,9 @@
 {
   "name": "character-chat",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "workspaces": ["server", "frontend"],
   "scripts": {
     "dev": "concurrently -k \"npm:dev --workspace server\" \"npm:dev --workspace frontend\"",
