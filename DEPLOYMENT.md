@@ -78,7 +78,7 @@ cloudflared service install
      - `/` for user/org pages
      - `/<repo>/` for project pages
 2. Push to `main` branch.
-3. Workflow `.github/workflows/deploy-pages.yml` builds `web` and deploys `web/dist`.
+3. Workflow `.github/workflows/deploy-pages.yml` builds `frontend` and deploys `frontend/dist`.
 
 ## 4) Post-deploy checks
 

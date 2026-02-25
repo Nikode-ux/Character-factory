@@ -1,10 +1,10 @@
 {
   "name": "character-chat",
   "private": true,
-  "workspaces": ["server", "web"],
+  "workspaces": ["server", "frontend"],
   "scripts": {
-    "dev": "concurrently -k \"npm:dev --workspace server\" \"npm:dev --workspace web\"",
-    "build": "npm run build --workspace server && npm run build --workspace web",
+    "dev": "concurrently -k \"npm:dev --workspace server\" \"npm:dev --workspace frontend\"",
+    "build": "npm run build --workspace server && npm run build --workspace frontend",
     "start": "npm run start --workspace server"
   },
   "devDependencies": {

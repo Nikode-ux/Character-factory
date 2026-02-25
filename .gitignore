@@ -1,5 +1,5 @@
 node_modules
-web/dist
+frontend/dist
 server/dist
 server/.env
 server-data/*

@@ -52,7 +52,7 @@ app.use("/lorebooks", lorebookRoutes);
 app.use("/memories", memoryRoutes);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const defaultWebDist = path.resolve(__dirname, "../../web/dist");
+const defaultWebDist = path.resolve(__dirname, "../../frontend/dist");
 const webDist = process.env.WEB_DIST || defaultWebDist;
 if (fs.existsSync(webDist)) {
   app.use(express.static(webDist));
