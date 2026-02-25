@@ -1,0 +1,9 @@
+node_modules
+frontend/node_modules
+server/node_modules
+frontend/dist
+server/dist
+npm-debug.log*
+Dockerfile*
+.git
+.gitignore
