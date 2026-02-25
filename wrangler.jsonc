@@ -1,0 +1,12 @@
+{
+  // Cloudflare Wrangler configuration
+  // Using JSONC so comments are allowed.
+  "name": "character-chat-frontend",
+  "compatibility_date": "2024-12-01",
+  // This tells Wrangler to deploy a Pages project from the built assets.
+  "pages_build_output_dir": "frontend/dist",
+  // Optional but satisfies "enabled: true" requirement some UIs enforce.
+  "observability": {
+    "enabled": true
+  }
+}

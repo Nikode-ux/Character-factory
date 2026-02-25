@@ -4,13 +4,19 @@
   "engines": {
     "node": "20.x"
   },
-  "workspaces": ["server", "frontend"],
+  "workspaces": [
+    "server",
+    "frontend"
+  ],
   "scripts": {
     "dev": "concurrently -k \"npm:dev --workspace server\" \"npm:dev --workspace frontend\"",
     "build": "npm run build --workspace server && npm run build --workspace frontend",
-    "start": "npm run start --workspace server"
+    "start": "npm run start --workspace server",
+    "deploy": "npm run build && wrangler deploy",
+    "dev:cf": "npm run build && wrangler dev"
   },
   "devDependencies": {
-    "concurrently": "^9.0.0"
+    "concurrently": "^9.0.0",
+    "wrangler": "^4.68.1"
   }
 }
