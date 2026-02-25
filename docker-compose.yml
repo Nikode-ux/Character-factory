@@ -1,0 +1,13 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    container_name: character-chat-api
+    restart: unless-stopped
+    env_file:
+      - server/.env
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./server-data:/app/data
